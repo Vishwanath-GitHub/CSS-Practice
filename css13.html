@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testing CSS</title>
+	<style type="text/css">
+		body
+		{
+			font-size: 30px;
+		}
+		div p span
+		{
+			text-shadow: 10px 10px 10px blue;
+		}
+		input
+		{
+			margin-left: 10px;
+			border-color: transparent;
+			border-radius: 5px;
+			outline: 0;
+		}
+		input:focus
+		{
+			border-style: dotted;
+			border-color: red;
+			border-width: 2px;
+		}
+		input[title~="entered"]
+		{
+			box-shadow: 10px 10px 10px green;
+			height: 50px;
+			width: 300px;
+		}
+		input[title~="entered"]:hover
+		{
+			opacity: 0.5;
+		}
+		input[title^="numb"]
+		{
+			box-shadow: 10px 10px 10px brown;
+			height: 50px;
+			width: 300px;
+		}
+		input[type="text"]
+		{
+			box-shadow: 10px 10px 10px pink;
+			height: 50px;
+			width: 300px;
+		}
+		fieldset
+		{
+			width: 1000px;
+		}
+		label[for$=word]
+		{
+			text-decoration: overline;
+			text-decoration-color: green;
+			text-decoration-style: dotted;
+			color: teal;
+			border-style: dashed;
+			border-width: 2px;
+			border-color: orange;
+			margin-top:  3px;
+			margin-left: 5px;
+			padding: 5px;
+		}
+		p:last-child
+		{
+			color: green;
+		}
+		input:disabled
+		{
+			background-color: orange;
+		}
+		input:disabled:hover
+		{
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		Div Text Here
+		<p>
+			Para Text Here:
+			<span>
+				Span Text Here
+			</span>
+		</p>
+
+	</div><form>
+		<fieldset><legend>Details</legend>
+<label for="username">Enter Username:</label><input type="text" name="username"><br>
+<label for="password">Enter Password:</label><input type="password" name="password" title="password entered"><br>
+<label for="age">Enter Age:</label><input type="number" name="number" title="number entered">
+</fieldset></form>
+<div>
+	<p>First Para</p>
+	<p>Second Para</p>
+	<span>extra</span>
+	<p>Third Para</p>
+</div>
+<input type="text" name="">
+<input type="password" name="" disabled="disabled"><br>
+
+
+</body>
+</html>

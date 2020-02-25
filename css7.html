@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	/*Very Very Important:
+		Difference between Margin & Position:
+
+		If you use position, the element appears 10px from the top. If you use margin, the element will sort of 'push' itself from the top, adding space around it.
+
+		In simple words, Position is used when we are placing the element in a container or on a page in a specific location. Margin is used for adding space. A margin forces a space between two elements. Margin is used for proper spacing between two or more elements. If you want to add something near to the element which has some margin, it will add but with some space between both of them since margin has created the space between two of them. But this is not the case with position. Position will place the element at the exact specified location and will not add or remove any space between two elements. Using position sometimes causes elements to overlap over each other since there will be no spacing. So margin will help here to add spacing between those elements.
+
+		Also, in a normal way, if we take an element and use 'position: absolute/relative;left:20px;' and 'margin-left:20px' they both will act the same and the element will be displayed at the place of 40px from left of the container or page;
+
+		For eg.
+		left sets the element position irrespective of other elements positions.
+		But with margin-left property, it will effect the other elements position too.
+	*/
+	body 
+	{
+		margin-top: 0px;
+		margin: 0px;
+		font-family: Arial, Verdana, sans-serif;
+		color: #665544;
+	}
+	h1 
+	{
+		background-color: #efefef;
+		padding: 5px;
+		position: absolute;/*position from the page but will move when scrolled*/
+		top: 0px;
+		left: 70px;
+		margin-top: 10px;/*margin-top is making the heading being displayed at 10px from the top of the page despite of 'top: 0px;'*/
+
+	}
+	h1.second 
+	{
+		background-color: #efefef;
+		padding: 5px;
+		position: absolute;/*position from the page but will move when scrolled
+		(basically it is 'position:static' but with top,left,bottom and right)*/
+		top: 150px;
+		left: 70px;
+	}
+	h1.third
+	{
+		background-color: #efefef;
+		padding: 5px;
+		position: absolute;/*position from the page but will move when scrolled
+		(basically it is 'position:static' but with top,left,bottom and right)*/
+		top: 400px;
+		left: 70px;
+		z-index: 10;/*this is used so that heading appears on the paragraph since the z-index of paragraph #p3 is 7 */
+	}
+	#p1
+	{
+		width: 700px;
+		font-family: Consolas;
+		position: static;/*Just like the normal HTML element. But top,left,right,bottom are not applicable*/
+	}
+	#p2
+	{
+		width: 700px;
+		font-family: Consolas;
+		position: relative;/*position is relative to other elements near it. Also since position is relative, it will always appear above the element whose position is absolute*/
+		top: 10px;
+		left: 100px;
+	}
+	#p3
+	{
+		width: 700px;
+		font-family: Consolas;
+		position: relative;
+		top: 10px;
+		left: 150px;
+		z-index: 7;
+	}
+	#signin
+	{
+		background-color: red;
+		color: white;
+		text-transform: uppercase;
+		width: 150px;
+		height: 50px;
+		right: 0px;
+		top: 15px;
+		margin-top: 0px;
+		position: fixed;/*Fixes the position of the element and doesn't move even if page is scrolled*/
+		border-color: red;
+		border-style: none;
+		box-shadow: 0px 0px 10px black;
+		font-size: 1em;
+		opacity: 0.5;
+		z-index: 3;
+		border-top-left-radius: 7px;
+		border-bottom-left-radius: 7px;
+	}
+	#signin:hover
+	{
+		box-shadow: 0px 0px 30px white;
+		cursor: pointer;
+		opacity: 1.0;
+	}
+	#div2
+	{
+		width: 100%;
+		background-color: black;
+		position: sticky;/*Element will be behave as normal HTML element like 'position:static' but when user scrolls the page, it will stick to the top when it reaches to the top of the page and will remain there*/
+		top: 0;/*This value must be '0' for 'position:sticky' to work*/
+		height: 70px;
+		border-color: black;
+		border-style: solid;
+		border-width: 5px;
+		z-index: 2;
+	}
+	#ul1
+	{
+		margin-right: auto;
+		margin-left: auto;
+		width: 500px;/*It is extremely important to provide width when margin-left and margin-right are auto for centering the element*/
+	}
+	li
+	{
+		margin-top: 30px;
+		display: inline;
+		color: white;
+		font-size: 20pt;
+		margin-left: 20px;
+		font-family: Impact;
+	}
+	p.other
+	{
+		text-align: justify;
+		width: 500px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	</style>
+</head>
+<body>
+	<input type="submit" name="signin" value="Sign In" id="signin">
+<h1>The Evolution of the Bicycle</h1>
+<p id="p1">Sunset is the time of day when our sky meets the outer space solar winds. There are blue, pink, and purple swirls, spinning and twisting, like clouds of balloons caught in a whirlwind. The sun moves slowly to hide behind the line of horizon, while the moon races to take its place in prominence atop the night sky. People slow to a crawl, entranced, fully forgetting the deeds that must still be done. There is a coolness, a calmness, when the sun does set.</p>
+<h1 class="second">The Evolution of the Bicycle</h1><p id="p2">On July 16, 1969, the Apollo 11 spacecraft launched from the Kennedy Space Center in Florida. Its mission was to go where no human being had gone before—the moon! The crew consisted of Neil Armstrong, Michael Collins, and Buzz Aldrin. The spacecraft landed on the moon in the Sea of Tranquility, a basaltic flood plain, on July 20, 1969. The moonwalk took place the following day. On July 21, 1969, at precisely 10:56 EDT, Commander Neil Armstrong emerged from the Lunar Module and took his famous first step onto the moon’s surface. He declared, “That’s one small step for man, one giant leap for mankind.” It was a monumental moment in human history!</p>
+<h1 class="third">The Evolution of the Bicycle</h1><p id="p3">On July 16, 1969, the Apollo 11 spacecraft launched from the Kennedy Space Center in Florida. Its mission was to go where no human being had gone before—the moon! The crew consisted of Neil Armstrong, Michael Collins, and Buzz Aldrin. The spacecraft landed on the moon in the Sea of Tranquility, a basaltic flood plain, on July 20, 1969. The moonwalk took place the following day. On July 21, 1969, at precisely 10:56 EDT, Commander Neil Armstrong emerged from the Lunar Module and took his famous first step onto the moon’s surface. He declared, “That’s one small step for man, one giant leap for mankind.” It was a monumental moment in human history!</p>
+<div id="div2">
+	<ul id="ul1">
+		<li>Home</li>
+		<li>Services</li>
+		<li>Contact</li>
+		<li>Product</li>
+	</ul>
+</div>
+<p class="other">On July 16, 1969, the Apollo 11 spacecraft launched from the Kennedy Space Center in Florida. Its mission was to go where no human being had gone before—the moon! The crew consisted of Neil Armstrong, Michael Collins, and Buzz Aldrin. The spacecraft landed on the moon in the Sea of Tranquility, a basaltic flood plain, on July 20, 1969. The moonwalk took place the following day. On July 21, 1969, at precisely 10:56 EDT, Commander Neil Armstrong emerged from the Lunar Module and took his famous first step onto the moon’s surface. He declared, “That’s one small step for man, one giant leap for mankind.” It was a monumental moment in human history!</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p class="other">On July 16, 1969, the Apollo 11 spacecraft launched from the Kennedy Space Center in Florida. Its mission was to go where no human being had gone before—the moon! The crew consisted of Neil Armstrong, Michael Collins, and Buzz Aldrin. The spacecraft landed on the moon in the Sea of Tranquility, a basaltic flood plain, on July 20, 1969. The moonwalk took place the following day. On July 21, 1969, at precisely 10:56 EDT, Commander Neil Armstrong emerged from the Lunar Module and took his famous first step onto the moon’s surface. He declared, “That’s one small step for man, one giant leap for mankind.” It was a monumental moment in human history!</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><p class="other">On July 16, 1969, the Apollo 11 spacecraft launched from the Kennedy Space Center in Florida. Its mission was to go where no human being had gone before—the moon! The crew consisted of Neil Armstrong, Michael Collins, and Buzz Aldrin. The spacecraft landed on the moon in the Sea of Tranquility, a basaltic flood plain, on July 20, 1969. The moonwalk took place the following day. On July 21, 1969, at precisely 10:56 EDT, Commander Neil Armstrong emerged from the Lunar Module and took his famous first step onto the moon’s surface. He declared, “That’s one small step for man, one giant leap for mankind.” It was a monumental moment in human history!</p>
+</body>
+</html>

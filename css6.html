@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		fieldset:hover
+		{
+			background-color: yellow;
+			cursor: cell;
+		}
+		fieldset
+		{
+			width: 350px;
+			border: 1px solid #dcdcdc;
+			border-radius: 10px;
+			padding: 20px;
+			text-align: left;
+		}
+		legend 
+		{
+			background-color: #efefef;
+			border: 1px solid #dcdcdc;
+			border-radius: 10px;
+			padding: 10px 20px;
+			text-align: left;
+			text-transform: uppercase;
+		}
+		#name
+		{
+			font-size: 26pt;
+			border-radius: 7px;
+			font-family: "Impact";
+			color: maroon;
+			cursor: row-resize;
+		}
+		#name:hover
+		{
+			box-shadow: 0px 0px 10px blue;
+		}
+		#number
+		{
+			border-radius: 7px;
+			font-family: "Impact";
+		}
+		#number:hover
+		{
+			box-shadow: 0px 0px 10px blue;
+			cursor: wait;
+		}
+		#namehead
+		{
+			display: inline;
+			text-shadow: 0px 0px 10px green;
+			cursor: move;
+		}
+		#agehead
+		{
+			display: inline;
+			text-shadow: 0px 0px 10px teal;
+			cursor: pointer;
+		}
+		label
+		{
+			cursor: crosshair;
+			float: none;
+			padding: 4px;
+		}
+	</style>
+</head>
+<body>
+<form><fieldset><legend>Details</legend>
+	<h2 id="namehead">Enter Name:</h2><input type="text" name="name" placeholder="Enter Name" id="name">
+	<h2 id="agehead">Enter Age:</h2><input type="number" name="number" maxlength="3" placeholder="Enter Number" id="number">
+	<br>
+	<input type="radio" name="gender" value="male"><label for="gender">Male</label><br>
+	<input type="radio" name="gender" value="female"><label for="gender">Female</label><br>
+</fieldset>
+</form>
+</body>
+</html>

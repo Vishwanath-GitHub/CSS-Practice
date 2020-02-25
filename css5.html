@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body
+		{
+			margin: 0px;
+			background-color: black;
+			color: white;
+		}
+		a
+		{
+			text-decoration: none;
+			color: white;
+		}
+		#ul1
+		{
+			list-style-type: devanagari;
+		}
+		#ul2
+		{
+			margin-left: 50px;
+			list-style-image: url(Images/bullet.png);/*image has to be of very small size*/
+		}
+	}
+		li
+		{
+			
+			margin: 10px 0px 0px 0px;/*for spacing between list items*/
+		}
+		#ul3
+		{
+			width: 300px;
+			text-align: justify;
+			list-style-position: inside;
+			vertical-align: 
+		}
+		.even
+		{
+			background-color: green;
+		}
+		.odd
+		{
+			background-color: orange;
+		}
+		th,td
+		{
+			padding: 5px;
+		}
+		#div
+		{
+			margin-left: 150px;
+			box-shadow: 10px 10px 30px 8px red;
+			width: 400px;
+			margin-bottom: 30px;
+		}
+		.even:hover
+		{
+			background-color: red;
+			box-shadow: 10px 10px 30px 8px teal;
+		}
+		.odd:hover
+		{
+			background-color: brown;
+			box-shadow: 10px 10px 30px 8px cyan;
+		}
+		th:hover
+		{
+			background-color: maroon;
+		}
+		#money
+		{
+			text-align: right;
+		}
+		table.table
+		{
+			empty-cells: hide;
+		}
+		#newdiv
+		{
+			margin-top: 10px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 10px;
+			width: 500px;
+		}
+		table.newtable
+		{
+			border-spacing: 5px;
+			border-collapse: collapse;
+		}
+		th:first-child
+		{
+			border-radius: 10px;
+		}
+		th:last-child
+		{
+			border-radius: 50px;
+		}
+	</style>
+</head>
+<body>
+<ul id="ul1">
+	<li><a href="home.html">Home</a></li>
+	<li><a href="explore.html">Explore</a></li>
+	<li><a href="assistant.html">Assistant</a></li>
+	<li><a href="contact.html">Contact</a></li>
+</ul>
+<ul id="ul2">
+	<li><a href="services.html">Services</a></li>
+	<li><a href="careers.html">Careers</a></li>
+	<li><a href="premium.html">Premium</a></li>
+	<li><a href="offline.html">Offline</a></li>
+	<li><a href="education.html">Education</a></li>
+	<li id="projects"><a href="projects.html">Projects</a></li>
+</ul>
+<ul id="ul3">
+	<li>This is the first point of the list. It should contain enough text so that the styles for the list can be used.</li>
+	<li>This is the second point of the list. It should contain enough text so that the styles for the list can be used.</li>
+	<li>This is the third point of the list. It should contain enough text so that the styles for the list can be used.</li>
+</ul>
+<div id="div">
+	<table class="table">
+<tr>
+ <th>Author</th>
+ <th>Title</th>
+ <th>Reserve Price</th>
+ <th>Current Bid</th>
+</tr >
+<tr class="odd">
+ <td>E.E. Cummings</td>
+ <td>Tulips & Chimneys</td>
+ <td id="money">$2,000.00</td>
+ <td id="money">$2,642.50</td>
+</tr>
+<tr class="even">
+ <td>Charles d'Orleans</td>
+ <td>Poemes</td>
+ <td></td>
+ <td id="money">$5,866.00</td>
+</tr>
+<tr class="odd">
+ <td>T.S. Eliot</td>
+ <td>Poems 1909 - 1925</td>
+ <td id="money">$1,250.00</td>
+ <td id="money">$8,499.35</td>
+</tr>
+<tr class="even">
+ <td>Sylvia Plath</td>
+ <td>The Colossus</td>
+ <td></td>
+ <td id="money">$1031.72</td>
+</tr>
+</table>
+</div>
+<div id="newdiv">
+	<table class="newtable">
+<tr>
+ <th>Author</th>
+ <th>Title</th>
+ <th>Reserve Price</th>
+ <th>Current Bid</th>
+</tr >
+<tr class="odd">
+ <td>E.E. Cummings</td>
+ <td>Tulips & Chimneys</td>
+ <td id="money">$2,000.00</td>
+ <td id="money">$2,642.50</td>
+</tr>
+<tr class="even">
+ <td>Charles d'Orleans</td>
+ <td>Poemes</td>
+ <td></td>
+ <td id="money">$5,866.00</td>
+</tr>
+<tr class="odd">
+ <td>T.S. Eliot</td>
+ <td>Poems 1909 - 1925</td>
+ <td id="money">$1,250.00</td>
+ <td id="money">$8,499.35</td>
+</tr>
+<tr class="even">
+ <td>Sylvia Plath</td>
+ <td>The Colossus</td>
+ <td></td>
+ <td id="money">$1031.72</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

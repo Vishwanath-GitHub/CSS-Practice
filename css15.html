@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		/*Using CSS Filters*/
+		/*'1' is the default value*/
+		/*'filter' is used to apply various CSS filters by their respective functions*/
+		#img1
+		{
+			filter: contrast(0.8) brightness(1.2) saturate(1.8);
+			border-style: solid;
+			border-width: 2px;
+		}
+		#img1:hover
+		{
+			filter: blur(5px);/*value of blur() is defined in px*/
+		}
+		#img2
+		{
+			filter: opacity(0.5);
+			border-style: solid;
+			border-width: 2px;
+		}
+		#img2:hover
+		{
+			filter:  invert(0.9);/*'invert' is used for inverting the current colors into negative form */
+		}
+		#img3
+		{
+			filter: sepia(0.5);
+			border-style: solid;
+			border-width: 2px;
+		}
+		#img4
+		{
+			filter: grayscale(0.9);
+			border-style: solid;
+			border-width: 2px;
+		}
+		#img5
+		{
+			filter: drop-shadow(10px 10px 4px rgba(0,0,0,0.5));/*used for giving shadow to the content. 1st value is offset-x, 2nd value is offset-y, 3rd value is blur-radius, 4th value is color*/
+			border-style: solid;
+			border-width: 2px;
+		}
+		#div1
+		{
+			width: 330px;
+			height: 285px;
+			background-color: green;
+			display: inline-block;
+			margin-right: 10px;
+		}
+		#img6
+		{
+			mix-blend-mode: luminosity;/*it deals with how the color of the foreground will match with the background. Also, it has several values for different situations. Most of them are present in this example but more values are present too.*/
+		}
+		#div2
+		{
+			width: 330px;
+			height: 285px;
+			background-color: green;
+			display: inline-block;
+			margin-right: 10px;
+		}
+		#img7
+		{
+			mix-blend-mode: lighten;
+		}
+		#div3
+		{
+			width: 330px;
+			height: 285px;
+			background-color: green;
+			display: inline-block;
+			margin-right: 10px;
+		}
+		#img8
+		{
+			mix-blend-mode: hard-light;
+		}
+		#div4
+		{
+			width: 330px;
+			height: 285px;
+			background-color: green;
+			display: inline-block;
+			margin-right: 10px;
+		}
+		#img9
+		{
+			mix-blend-mode: soft-light;
+		}
+		#div5
+		{
+			width: 330px;
+			height: 285px;
+			background-color: green;
+			display: inline-block;
+			margin-right: 10px;
+		}
+		#img10
+		{
+			mix-blend-mode: exclusion;
+		}
+		#div6
+		{
+			width: 330px;
+			height: 285px;
+			background-color: green;
+			display: inline-block;
+			margin-right: 10px;
+		}
+		#img11
+		{
+			mix-blend-mode: overlay;
+		}
+		#div7
+		{
+			width: 330px;
+			height: 285px;
+			background-color: green;
+			display: inline-block;
+			margin-right: 10px;
+		}
+		#img12
+		{
+			mix-blend-mode: screen;
+		}
+		#div8
+		{
+			width: 330px;
+			height: 285px;
+			background-color: green;
+			display: inline-block;
+			margin-right: 10px;
+		}
+		#img13
+		{
+			mix-blend-mode: saturation;
+		}
+		#div9
+		{
+			width: 330px;
+			height: 285px;
+			background-color: green;
+			display: inline-block;
+			margin-right: 10px;
+		}
+		#img14
+		{
+
+			mix-blend-mode: difference;
+		}
+	</style>
+</head>
+<body>
+<img src="sample.png" id="img1"><caption>Img1</caption>
+<img src="sample.png" id="img2"><caption>Img2</caption>
+<img src="sample.png" id="img3"><caption>Img3</caption>
+<img src="sample.png" id="img4"><caption>Img4</caption>
+<img src="sample.png" id="img5"><caption>Img5</caption>
+<div id="div1">
+	<img src="sample.png" id="img6">
+</div>
+<div id="div2">
+	<img src="sample.png" id="img7">
+</div>
+<div id="div3">
+	<img src="sample.png" id="img8">
+</div>
+<div id="div4">
+	<img src="sample.png" id="img9">
+</div>
+<div id="div5">
+	<img src="sample.png" id="img10">
+</div>
+<div id="div6">
+	<img src="sample.png" id="img11">
+</div>
+<div id="div7">
+	<img src="sample.png" id="img12">
+</div>
+<div id="div8">
+	<img src="sample.png" id="img13">
+</div>
+<div id="div9">
+	<img src="sample.png" id="img14">
+</div>
+</body>
+</html>

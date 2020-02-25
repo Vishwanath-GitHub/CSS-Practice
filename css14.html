@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test2</title>
+	<style type="text/css">
+		body
+		{
+			font-size: 30px;
+		}
+		p:not(.para)
+		{
+			opacity: 0.5;
+			font-family: monospace;
+		}
+		.new
+		{
+			margin-left: 70px;
+			width: 200px;
+			height: 200px;
+			border-style: solid;
+			border-width: 2px;
+			background-color: grey;
+			position: relative;
+		}
+		.new::before
+		{
+			display: inline-block;
+			width: 200px;
+			height: 200px;
+			border-style: dashed;
+			border-color: orange;
+			border-width: 2px;
+			background-color: green;
+			position: absolute;
+			left: 50px;
+			content: 'hi';/*extremely important for ::before to work*/
+			z-index: 1;
+		}
+		.new::after
+		{
+			display: inline-block;
+			width: 200px;
+			height: 200px;
+			border-style: dashed;
+			border-color: green;
+			border-width: 2px;
+			background-color: orange;
+			position: absolute;
+			right: 50px;
+			content: 'hi';/*extremely important for ::before to work*/
+		}
+		a
+		{
+			text-decoration: none;
+		}
+		.link::after
+		{
+			content: ' (secure portal)';
+			color: green;
+			text-shadow: 5px 5px 5px green;
+			font-size: 20px;
+			vertical-align: super;
+		}
+		.box::before
+		{
+			display: inline-block;
+			background-color: black;
+			color: yellow;
+			content: 'DEAL!! ';
+		}
+	</style>
+</head>
+<body>
+<p class="para">First One</p>
+<p class="para">Second One</p>
+<p class="test">Third One</p>
+<p class="para">Fourth One</p>
+<p class="para">Fifth One</p><br>
+<div class="new"></div>
+<p class="link">For more Information, <a href="new.html">click here</a>.</p>
+<p class="box"> Get it for $25</p>
+</body>
+</html>

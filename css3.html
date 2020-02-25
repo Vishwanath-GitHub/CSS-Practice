@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body
+		{
+			margin: 0px;/*Default is 8px*/
+		}
+		#p1
+		{
+			border-color: orange;
+			border-width: thick;
+			background-color: green;
+			width: 300px;
+			border-style: solid;/*This is extremely necessary.Default is none.*/
+			border-left-color: black;
+			border-bottom-color: transparent;
+			padding-bottom: 5px;
+			margin: 10px;
+		}
+		#p2
+		{
+			background-color: orange;
+			width: 300px;
+			border-style: dashed;
+			border-right-width: 5px;
+			border-right-style: double;
+			border-width: medium;
+			border-left-color: blue;
+			border-bottom-color: teal;
+			padding-left: 10px;
+			margin-top: 50px;
+			margin-left: 80px;
+			margin-bottom: 30px;  
+		}
+		#p3
+		{
+			text-align: justify;
+			background-color: black;
+			color: white;
+			border: 5px dotted teal;
+			width: 300px;
+			padding: 10px;
+			margin-left: auto;/*for centering the box*/
+			margin-right: auto;/*for centering the box*/
+		}
+		#d1
+		{
+			background-color: lightgreen;
+			width: 500px;
+		}
+		#ul1
+		{
+			border-style: solid;
+			background-color: black;
+			border-width: 5px;
+			border-color: black;
+			text-align: center;
+			margin-bottom: 1px;
+		}
+		#ul2
+		{
+			margin-top: 3px;
+			border-style: solid;
+			background-color: black;
+			border-width: 2px;
+			border-color: black;
+			text-align: center;
+		}
+		li
+		{
+			display: inline;
+			font-weight: bolder;
+			font-size: 16pt;
+			color: white;
+			margin-right: 15px;/*spacing between list items*/
+			margin-left: 15px;/*spacing between list items*/
+		}
+		#ul2>li
+		{
+			display: inline;
+			font-weight: bolder;
+			font-size: 20pt;
+			color: white;
+			margin-right: 15px;/*spacing between list items*/
+			margin-left: 15px;/*spacing between list items*/
+		}
+		a
+		{
+			color: white;
+			text-decoration: none;
+		}
+		#premium
+		{
+			visibility: hidden;
+		}
+		#projects
+		{
+			visibility: hidden;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<ul id="ul1">
+	<li><a href="home.html">Home</a></li>
+	<li><a href="explore.html">Explore</a></li>
+	<li><a href="assistant.html">Assistant</a></li>
+	<li><a href="contact.html">Contact</a></li>
+</ul>
+<ul id="ul2">
+	<li><a href="services.html">Services</a></li>
+	<li><a href="careers.html">Careers</a></li>
+	<li id="premium"><a href="premium.html">Premium/a></li>
+	<li><a href="offline.html">Offline</a></li>
+	<li><a href="education.html">Education</a></li>
+	<li id="projects"><a href="projects.html">Projects</a></li>
+</ul>
+<p id="p1">This is the second paragraph written for the CSS Learning. This will be used for different purposes and multiple properties gained from the CSS. Take this as a sample paragraph too. So make sure this would be displayed perfectly.</p>
+<p id="p2">This is the second paragraph written for the CSS Learning. This will be used for different purposes and multiple properties gained from the CSS. Take this as a sample paragraph too. So make sure this would be displayed perfectly.</p>
+<div id="d1"><p id="p3">This is the second paragraph written for the CSS Learning. This will be used for different purposes and multiple properties gained from the CSS. Take this as a sample paragraph too. So make sure this would be displayed perfectly.</p></div>
+</body>
+</html>

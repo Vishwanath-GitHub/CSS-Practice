@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body
+		{
+			margin: 0px;
+		}
+		#p1
+		{
+			text-align: justify;
+			width: 300px;/*It is extremely important to provide width when margin-left and margin-right are auto for centering the element*/
+			margin-left: auto;
+			margin-right: auto;
+			background-color: gray;
+			margin-top: 0px;
+			color: white;
+			-moz-box-shadow: 5px 5px 5px green;/*mozilla-box shadow*/
+			-webkit-box-shadow: 5px 5px 5px green;/*opera-box shadow*/
+			box-shadow: 10px/*horizontal offset*/ 10px/*vertical offset*/ 30px/*shadow blur*/ 8px/*spread of shadow(can be omitted)*/ green/*shadow color*/;/*chrome-box shadow*/
+		}  
+		#p2
+		{
+			text-align: justify;
+			width: 300px;
+			margin-left: auto;
+			margin-right: 2px;
+			background-color: gray;
+			margin-top: 0px;
+			color: white;
+			-moz-box-shadow: 5px 5px 5px green;/*mozilla-box shadow*/
+			-webkit-box-shadow: 5px 5px 5px green;/*opera-box shadow*/
+			box-shadow:inset 10px/*horizontal offset*/ 10px/*vertical offset*/ 30px/*shadow blur*/ 2px/*spread of shadow(can be omitted)*/ orange/*shadow color*/;/*chrome-box shadow*/
+			border-radius: 10px;
+			border-style: dashed;
+			border-color: red;
+		}
+		#p3
+		{
+			margin-top: 5px;
+			margin-left: 2px;
+			margin-right: auto;
+			width: 300px;
+			text-align: justify;
+			border-style: solid;
+			border-color: pink;
+			border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+			border-width: 7px;
+			padding: 5px;
+		}
+	</style>
+</head>
+<body>
+<p id=p1>
+	This is the second paragraph written for the CSS Learning. This will be used for different purposes and multiple properties gained from the CSS. Take this as a sample paragraph too. So make sure this would be displayed perfectly. Using it for later CSS Properties & Declarations.
+</p>
+<p id=p2>
+	This is the second paragraph written for the CSS Learning. This will be used for different purposes and multiple properties gained from the CSS. Take this as a sample paragraph too. So make sure this would be displayed perfectly. Using it for later CSS Properties & Declarations.
+</p>
+<p id=p3>
+	This is the second paragraph written for the CSS Learning. This will be used for different purposes and multiple properties gained from the CSS. Take this as a sample paragraph too. So make sure this would be displayed perfectly. Using it for later CSS Properties & Declarations.
+</p>
+</body>
+</html>

@@ -1,0 +1,15 @@
+@import url("test3.css");
+#h1
+{
+	text-transform: uppercase;
+	text-decoration: overline;
+	font-style: italic;
+	font-stretch: expanded;
+	color: green;
+	text-decoration-color: orange;
+	text-align: center;
+}
+#h1:hover
+{
+	text-shadow: 5px 5px 5px black;
+}
